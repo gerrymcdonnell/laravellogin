@@ -3,19 +3,19 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-//use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Post extends Model
 {
     //called posts in laravel
 
     //do softdelete
-    //use SoftDeletes;
+    use SoftDeletes;
 
     //upload folder
     //public $dir="/images/";
 
-    //protected $dates=['deleted_at'];
+    protected $dates=['deleted_at'];
 
     protected $fillable=[
         'title','content'
