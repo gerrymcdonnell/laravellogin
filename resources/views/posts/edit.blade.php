@@ -29,7 +29,7 @@
 
     <div class="form-group">
             {!! Form::label('content','Content:') !!}
-            {!! Form::text('content',null,['class'=>'form-control','placeholder'=>'enter content']) !!}
+            {!! Form::textarea('content',null,['class'=>'form-control','placeholder'=>'enter content']) !!}
     </div>
 
 
