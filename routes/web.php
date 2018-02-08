@@ -11,10 +11,17 @@
 |
 */
 
+//default route/page
 Route::get('/', function () {
-    return view('welcome');
+    //return view('welcome');
+
+    if(Auth::check()){
+        return "the user is logged in";
+    }
 });
 
 Auth::routes();
+
+//Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/home', 'HomeController@index')->name('home');
