@@ -25,9 +25,11 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                        <li><a class="nav-link" href="{{ route('posts.index') }}">Posts</a></li>
+                        <li><a class="nav-link" href="{{ route('posts.create') }}">Add Post</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
