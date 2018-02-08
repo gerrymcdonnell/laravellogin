@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Auth;
 
 class PostsController extends Controller
 {
+
+
     public function __construct()
     {
         //only allow user access when authenticated
