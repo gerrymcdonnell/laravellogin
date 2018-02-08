@@ -1,10 +1,10 @@
-@extends('layouts.app')
+@extends('layouts.mainlayout2')
 
 @section('header')
 
     <section class="jumbotron text-center">
     <div class="container">
-    <h1 class="jumbotron-heading">Add Post v2</h1>
+    <h1 class="jumbotron-heading">Add Post</h1>
 
     </div>
     </section>
@@ -13,8 +13,6 @@
 
 
 @section('content')
-
-Add Post
 
 
 {{--open form--}}
