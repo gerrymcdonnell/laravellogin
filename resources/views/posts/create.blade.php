@@ -1,4 +1,4 @@
-@extends('layouts.mainlayout2')
+@extends('layouts.app')
 
 @section('header')
 
