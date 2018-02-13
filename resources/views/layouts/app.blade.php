@@ -31,7 +31,9 @@
                         <li><a class="nav-link" href="{{ route('posts.index') }}">Posts</a></li>
                         <li><a class="nav-link" href="{{ route('posts.create') }}">Add Post</a></li>
 
-                        <li><a class="nav-link" href="{{ route('admin.index') }}">Admin</a></li>
+                        <li><a class="nav-link" href="{{ route('admin.users.index') }}">Admin Users</a></li>
+
+                         <li><a class="nav-link" href="{{ route('admin.posts.index') }}">Admin Posts</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -43,7 +45,7 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                    {{ Auth::user()->name }} - {{ Auth::user()->role->name }} <span class="caret"></span>
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"

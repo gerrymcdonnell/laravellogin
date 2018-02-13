@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-
+Admin Posts
 @section('content')
 	
 	@if (Session::has('deleted_post'))
