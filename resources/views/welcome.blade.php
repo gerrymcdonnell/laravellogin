@@ -41,6 +41,13 @@
                     <a href="https://laravel.com/docs">Documentation</a>
 
                 </div>
+
+                to do:
+                middleware
+                roles
+                upload
+                wysiwyg editor
+
             </div>
         </div>
     </body>

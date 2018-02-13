@@ -26,4 +26,18 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    //role middleware relationship
+    public function role(){
+        return $this->belongsTo('App\Role');
+    }
+
+    //is user admin
+    public function isAdmin(){
+        if($this->role->name=='admin'){
+            return true;
+        }
+        return false;
+    }
+
 }
