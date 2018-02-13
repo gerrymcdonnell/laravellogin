@@ -30,6 +30,8 @@
                     <ul class="navbar-nav mr-auto">
                         <li><a class="nav-link" href="{{ route('posts.index') }}">Posts</a></li>
                         <li><a class="nav-link" href="{{ route('posts.create') }}">Add Post</a></li>
+
+                        <li><a class="nav-link" href="{{ route('admin.index') }}">Admin</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
